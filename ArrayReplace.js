@@ -12,10 +12,10 @@ function preg_quote( str ) {
 /**
  * Replaces one string by another based on a reference table highlighted in the parameters.
  *
- * @param {cell} input The cell to run the function.
- * @param {string} fromList of values to look for replacement.
- * @param {string} toList of values replace, must match line by line.
- * @param {boolean} 0 for not case sensitive, 1 for case sensitive.
+ * @param {A1} input The cell to run the function.
+ * @param {B1:B100} fromList of values to look for replacement.
+ * @param {C1:C100} toList of values replace, must match line by line.
+ * @param {0} caseSensitive 0 for not case sensitive, 1 for case sensitive. Default is 0.
  * @return The input with the strings replaced.
  * @customfunction
  */
