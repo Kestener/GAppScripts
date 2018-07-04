@@ -9,6 +9,16 @@ function preg_quote( str ) {
   return (str+'').replace(/([\\\.\+\*\?\[\^\]\$\(\)\{\}\=\!\<\>\|\:])/g, "\\$1");
 }
 
+/**
+ * Replaces one string by another based on a reference table highlighted in the parameters.
+ *
+ * @param {cell} input The cell to run the function.
+ * @param {string} fromList of values to look for replacement.
+ * @param {string} toList of values replace, must match line by line.
+ * @param {boolean} 0 for not case sensitive, 1 for case sensitive.
+ * @return The input with the strings replaced.
+ * @customfunction
+ */
 function ARRAYREPLACE(input,fromList,toList,caseSensitive){
   /* default behavior it is not case sensitive */
   if( caseSensitive == undefined ){
